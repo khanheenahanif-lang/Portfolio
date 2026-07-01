@@ -6,7 +6,7 @@ A modern and responsive personal portfolio website showcasing my skills, project
 
 **3. Live Demo:**
  
-🔗 https://khanheenahanif-lang.github.io/portfolio/
+🔗 https://khanheenahanif-lang.github.io/Portfolio/
 
 
 **4. Preview Image:**

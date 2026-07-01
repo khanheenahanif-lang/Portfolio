@@ -1,7 +1,9 @@
-**Project Title**
-** Personal Portfolio Website**
+**Project Title:**
+
+**Personal Portfolio Website**
 
 **2. Short Description:**
+
 A modern and responsive personal portfolio website showcasing my skills, projects, certifications, resume, and contact information. Built using HTML, CSS, and JavaScript.
 
 **3. Live Demo:**

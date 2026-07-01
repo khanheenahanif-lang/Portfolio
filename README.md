@@ -8,12 +8,8 @@ A modern and responsive personal portfolio website showcasing my skills, project
  
 🔗 https://khanheenahanif-lang.github.io/Portfolio/
 
-**3. Screenshot:**
 
-<img width="1786" height="13658" alt="khanheenahanif-lang github io_Portfolio_" src="https://github.com/user-attachments/assets/4c9e096a-ff91-4a60-aa47-33994db1bba5" />
-
-
-**4. Features:**
+**3. Features:**
 - Responsive Design
 - Modern User Interface
 - About Me Section
@@ -26,7 +22,7 @@ A modern and responsive personal portfolio website showcasing my skills, project
 - Mobile Friendly
 
 
-**5. Technologies Used:**
+**4. Technologies Used:**
 - HTML5
 - CSS3
 - JavaScript

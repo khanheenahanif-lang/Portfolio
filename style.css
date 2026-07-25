@@ -27,6 +27,10 @@ body{
    
 }
 
+section{
+    scroll-margin-top:90px;
+}
+
 /* ===============================
    SCROLLBAR
 ================================= */
@@ -109,6 +113,7 @@ header{
     justify-content:space-between;
     align-items:center;
     padding:20px 8%;
+    position:relative;
     
 }
 

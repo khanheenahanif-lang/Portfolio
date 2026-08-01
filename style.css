@@ -154,6 +154,26 @@ header{
 
 }
 
+.menu-toggle{
+    display:none;
+    flex-direction:column;
+    justify-content:space-between;
+    width:36px;
+    height:26px;
+    background:transparent;
+    border:none;
+    cursor:pointer;
+    padding:0;
+}
+
+.menu-toggle span{
+    display:block;
+    width:100%;
+    height:3px;
+    background:white;
+    border-radius:3px;
+}
+
 /* ===============================
    BUTTON
 ================================= */
@@ -949,7 +969,8 @@ footer p{
 .hero{
     flex-direction:column-reverse;
     text-align:center;
-    gap:50px;
+    gap:40px;
+    padding-top:140px;
 }
 
 .hero-text h1{
@@ -967,22 +988,44 @@ footer p{
 
 }
 
-@media(max-width:768px){
+@media(max-width:900px){
 
 .navbar{
-    flex-direction:column;
-    padding:20px;
+    padding:16px 5%;
+}
+
+.menu-toggle{
+    display:flex;
 }
 
 .nav-links{
-    flex-wrap:wrap;
-    justify-content:center;
-    margin-top:20px;
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    flex-direction:column;
+    background:linear-gradient(to right, #831bcd, #f9620f);
+    padding:20px 5%;
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
+}
+
+.nav-links.active{
+    display:flex;
 }
 
 .nav-links li{
-    margin:10px;
+    margin:0 0 12px 0;
 }
+
+.nav-links li a{
+    display:block;
+    padding:6px 0;
+}
+
+}
+
+@media(max-width:768px){
 
 .hero-text h1{
     font-size:42px;
@@ -994,6 +1037,7 @@ footer p{
 
 .section-title{
     font-size:34px;
+    margin-bottom:40px;
 }
 
 .hero-image img{
@@ -1001,34 +1045,85 @@ footer p{
     height:250px;
 }
 
+.hero-buttons{
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+}
+
 .btn{
     display:block;
-    margin-bottom:15px;
+    margin:0 0 15px 0;
     text-align:center;
 }
 
 .social-icons{
     justify-content:center;
+    flex-wrap:wrap;
+}
+
+#about,
+#skills,
+#education,
+#experience,
+#projects,
+#certificates,
+#contact{
+    padding:80px 5%;
+}
+
+.timeline-card,
+.project-card,
+.certificate-card,
+.experience-card{
+    padding:24px;
 }
 
 }
 
+@media(max-width:600px){
 
-@media(max-width:768px){
-    header{
-        height:150px;
-    }
-    .hero{
-        padding-top:180px;
-    }
-    .hero img{
-        width: 180px;
-        height: 180px;
-    }
-    nav ul{
-        flex-wrap: wrap;
-        justify-content: center;
-        
-    }
+.logo{
+    font-size:28px;
+}
+
+.hero{
+    width:100%;
+    padding-top:120px;
+    gap:30px;
+}
+
+.hero-text h1{
+    font-size:32px;
+}
+
+.hero-text h2{
+    font-size:18px;
+}
+
+.description{
+    font-size:15px;
+    line-height:1.7;
+}
+
+.section-title{
+    font-size:28px;
+}
+
+.skills-grid,
+.projects-grid,
+.certificate-grid{
+    grid-template-columns:1fr;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:14px;
+}
+
+footer h2{
+    font-size:24px;
+}
+
 }
 

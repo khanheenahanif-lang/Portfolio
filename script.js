@@ -60,14 +60,25 @@ const menuToggle = document.querySelector(".menu-toggle");
 const navMenu = document.querySelector(".nav-links");
 
 if (menuToggle && navMenu) {
+    menuToggle.setAttribute("aria-expanded", "false");
+
     menuToggle.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
+        const isOpen = navMenu.classList.toggle("active");
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
     });
 
     document.querySelectorAll(".nav-links a").forEach(link => {
         link.addEventListener("click", () => {
             navMenu.classList.remove("active");
+            menuToggle.setAttribute("aria-expanded", "false");
         });
+    });
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 900) {
+            navMenu.classList.remove("active");
+            menuToggle.setAttribute("aria-expanded", "false");
+        }
     });
 }
 
